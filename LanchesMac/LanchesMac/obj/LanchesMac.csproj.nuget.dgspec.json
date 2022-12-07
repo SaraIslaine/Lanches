@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sarai\\source\\repos\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {}
+    "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sarai\\source\\repos\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {
+    "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\LanchesMac.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sarai\\source\\repos\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+        "projectUniqueName": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
         "projectName": "LanchesMac",
-        "projectPath": "C:\\Users\\sarai\\source\\repos\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
+        "projectPath": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\LanchesMac.csproj",
         "packagesPath": "C:\\Users\\sarai\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sarai\\source\\repos\\LanchesMac\\LanchesMac\\obj\\",
+        "outputPath": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
