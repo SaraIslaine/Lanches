@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VSQ5xWQ+D3Bcw7TXHeIdUqdwzgqEm5UWhvuwHXtTnnY=",
+  "Hash": "6Z2d58Em7SM7NedyeKycLWccSfV7V+taDKbnwfxMTzQ=",
   "Source": "LanchesMac",
   "BasePath": "_content/LanchesMac",
   "Mode": "Default",
@@ -219,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\icone.png"
+    },
+    {
+      "Identity": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\wwwroot\\images\\lixeira.png",
+      "SourceId": "LanchesMac",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\wwwroot\\",
+      "BasePath": "_content/LanchesMac",
+      "RelativePath": "images/lixeira.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lixeira.png"
     },
     {
       "Identity": "C:\\Users\\sarai\\source\\repos\\Lanches\\LanchesMac\\LanchesMac\\wwwroot\\images\\phone-app-icon.png",

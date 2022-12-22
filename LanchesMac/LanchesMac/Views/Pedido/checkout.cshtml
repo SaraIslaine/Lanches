@@ -1,59 +1,81 @@
-﻿@model CarrinhoCompraViewModel
+﻿@model Pedido
 
-<div class="Container">
-<div class="row">
-    <img src="~/images/carrinho imagem.png"/>
-    <div>
-    <h4>Pedido finalizado! </h4>
+<h3> Você está quase finalizando seu pedido</h3>
+<hr />
+<form asp-action="Checkout" method="post" class="form-horizontal" role="form">
+    <div class="row">
+        <div class="form-group col-md-6">
+         <label asp-for="Nome" class="control-label"></label>
+         <input asp-for="Nome" class="form-control">
+         <span asp-validation-for="Nome" class="text-danger"></span>
 
-    </div>
-    <table class="table table-bordered table-striped">
-  <thead>
-      <tr>
-          <th>Quantidade</th>
-          <th>Lanche</th>
-          <th class="texto-right">Preço</th>
-          <th class="texto-right">Subtotal</th>
-          <th></th>
-      </tr>
+        </div>
+         </div>
+        <div class="row">
+        <div class="form-group col-md-6">
+         <label asp-for="Sobrenome" class="control-label"></label>
+         <input asp-for="Sobrenome" class="form-control">
+         <span asp-validation-for="Sobrenome" class="text-danger"></span>
 
-  </thead>
-  <tbody>
-      @foreach(var item in Model.carrinhoCompra.CarrinhoCompraItems)
-                {
-                    <tr>
-                        <td class="text-center">@item.Quantidade</td>
-                        <td class="text-left">@item.Lanche.Nome</td>
-                        <td class="text-right">@item.Lanche.Preco.ToString("c")</td>
-                      <td class="text-right">
-                       @((item.Quantidade * item.Lanche.Preco).ToString("c"))
-                      </td>
-                        
-                     
-                       <td  class="text-center">
-                     <a  asp-controller="CarrinhoCompra" asp-action="RemoverItemDoCarrinhoCompra"
-                     asp-route-lancheId="@item.Lanche.LancheId"> <img src="~/images/lixeira imagem.webp" />
-                     </a>
-                   </td>
-                   
-                 </tr>
-                 }
-                 </tbody>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-md-6">
+         <label asp-for="Endereco1" class="control-label"></label>
+         <input asp-for="Endereco1" class="form-control">
+         <span asp-validation-for="Endereco1" class="text-danger"></span>
 
+        </div>
+        </div>
+         <div class="row">
+        <div class="form-group col-md-6">
+         <label asp-for="Endereco2" class="control-label"></label>
+         <input asp-for="Endereco2" class="form-control">
+         <span asp-validation-for="Endereco2" class="text-danger"></span>
 
-    </table>
-    <tfoot>
-    <tr>
-    <td colspan="3" class="text-right">Total a Pagar: </td>
-    <td  class="text-right">
-    @Model.carrinhoCompraTotal.ToString("C")
-    </td>
-    </tr>
-     </tfoot>
+        </div>
+        </div>
+        <div class="row">
+        <div class="form-group col-md-4">
+         <label asp-for="Cep" class="control-label"></label>
+         <input asp-for="Cep" class="form-control">
+         <span asp-validation-for="Cep" class="text-danger"></span>
 
-    
-       <br/>
+        </div>
+        </div>
+         <div class="row">
+        <div class="form-group col-md-4">
+         <label asp-for="Cidade" class="control-label"></label>
+         <input asp-for="Cidade" class="form-control">
+         <span asp-validation-for="Cidade" class="text-danger"></span>
 
+        </div>
+        </div>
+         <div class="row">
+        <div class="form-group col-md-4">
+         <label asp-for="Estado" class="control-label"></label>
+         <input asp-for="Estado" class="form-control">
+         <span asp-validation-for="Estado" class="text-danger"></span>
 
-</div>
-</div>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="form-group col-md-4">
+         <label asp-for="Est" class="control-label"></label>
+         <input asp-for="Estado" class="form-control">
+         <span asp-validation-for="Estado" class="text-danger"></span>
+
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="form-group col-md-4">
+         <label asp-for="Estado" class="control-label"></label>
+         <input asp-for="Estado" class="form-control">
+         <span asp-validation-for="Estado" class="text-danger"></span>
+
+        </div>
+        </div>
+
+        </form>

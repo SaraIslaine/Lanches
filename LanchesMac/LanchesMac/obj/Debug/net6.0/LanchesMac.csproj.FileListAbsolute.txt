@@ -524,3 +524,4 @@ C:\Users\sarai\source\repos\Lanches\LanchesMac\LanchesMac\obj\Debug\net6.0\refin
 C:\Users\sarai\source\repos\Lanches\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.pdb
 C:\Users\sarai\source\repos\Lanches\LanchesMac\LanchesMac\obj\Debug\net6.0\LanchesMac.genruntimeconfig.cache
 C:\Users\sarai\source\repos\Lanches\LanchesMac\LanchesMac\obj\Debug\net6.0\ref\LanchesMac.dll
+C:\Users\sarai\source\repos\Lanches\LanchesMac\LanchesMac\bin\Debug\net6.0\wwwroot\images\lixeira.png

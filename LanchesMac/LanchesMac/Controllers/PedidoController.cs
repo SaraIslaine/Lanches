@@ -8,30 +8,37 @@ namespace LanchesMac.Controllers
     public class PedidoController : Controller
 
     {
-        private readonly ILanchesRepository _lancheRepository;
-
+        private readonly IPedidoRepository _pedidoRepository;
         private readonly CarrinhoCompra _carrinhoCompra;
 
-        public PedidoController(ILanchesRepository lancheRepository,
-            CarrinhoCompra carrinhoCompra)
+        public PedidoController(IPedidoRepository pedidoRepository, CarrinhoCompra carrinhoCompra)
         {
-            _lancheRepository = lancheRepository;
+            _pedidoRepository = pedidoRepository;
             _carrinhoCompra = carrinhoCompra;
         }
 
+        [HttpGet]
         public IActionResult checkout()
         {
-            var itens = _carrinhoCompra.GetCarrinhoCompraItems();
-            _carrinhoCompra.CarrinhoCompraItems = itens;
+            return View();
 
-            var carrinhoCompraVM = new CarrinhoCompraViewModel
-            {
-                carrinhoCompra = _carrinhoCompra,
-                carrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()
-            };
-            return View(carrinhoCompraVM);
+
+            //var itens = _carrinhoCompra.GetCarrinhoCompraItems();
+            //_carrinhoCompra.CarrinhoCompraItems = itens;
+
+            //var carrinhoCompraVM = new CarrinhoCompraViewModel
+            //{
+            //    carrinhoCompra = _carrinhoCompra,
+            //    carrinhoCompraTotal = _carrinhoCompra.GetCarrinhoCompraTotal()
+            //};
+         
         }
-       
+        [HttpPost]
+        public IActionResult Checkout(Pedido pedido)
+        {
+            return View();
+        }
     }
-    }
+}
+    
 
